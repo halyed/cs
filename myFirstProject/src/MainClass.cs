@@ -24,6 +24,8 @@ namespace myFirstProject.src
             printVarsTypes();
             usingOperators(0, 0);
             printDate();
+            String type = "switch";
+            isGreaterThanTwo(1,type);
             
         }
 
@@ -66,11 +68,38 @@ namespace myFirstProject.src
             DateTime twoDaysLater = today.AddDays(2);
             DayOfWeek dayOfWeek = twoDaysLater.DayOfWeek;
             bool isDST = twoDaysLater.IsDaylightSavingTime();
+            var monthlyWageOfHamouda = 3500;
 
             Console.WriteLine(employeeStartDate + ", " + today + ", " + now + ", " + ", " + workTime + ", " + twoDaysLater + ", " + dayOfWeek + ", " + isDST );
             
 
         }
+
+        public static bool isGreaterThanTwo(int number, String operatorUsed){
+            Console.WriteLine(operatorUsed);
+            if(operatorUsed.Equals("bool")){
+                Console.WriteLine("type used boolean");
+                return number >=2;
+            }else if(operatorUsed.Equals("switch")){
+                Console.WriteLine("type used swicth");
+                switch(number){
+                    case < 2 : 
+                        Console.WriteLine("number lower than two");
+                        return false;
+                    default:
+                        Console.WriteLine("numbre greater than two");
+                        return true;
+                }
+            }else{
+                Console.WriteLine("type used if/else");
+                if (number >= 2) return true;
+                else return false;
+            }
+            
+            
+        }
+
+
     }
 
 

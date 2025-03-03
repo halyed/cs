@@ -121,6 +121,36 @@ namespace myFirstProject.src
             }
             return newNumber;
         }
+
+
+
+        public static void ignoringBackslash(){
+            string escapedFilePath = "C:\\Users\\hly\\Desktop\\Git\\cs\\myFirstProject\\resume";
+            string verbatimFilePath = @"C:\Users\hly\Desktop\Git\cs\myFirstProject\resume";
+            string lastName = "SABOU";
+            string firstName = "Hamouda";
+            string escapingCharacter = $"Hello,\nMy first name is :\t{firstName} and my last name is :\t{lastName}";
+            Console.WriteLine($"Using escapedFilePath : {escapedFilePath}");
+            Console.WriteLine($"Using verbatimFilePath : {verbatimFilePath}");
+            Console.WriteLine(escapingCharacter);
+        }
+
+        public static void comparingString(){
+            string name1 = "Hamouda";
+            string name2 = "Hamouda";
+            Console.WriteLine("Are name1 and name2 equal ?" + (name1==name2));
+        }
+
+        public static void usingTryParse(string toParse){
+           int parsed ;
+           if(int.TryParse(toParse, out parsed))
+                Console.WriteLine("Number successfully parsed");
+            else Console.WriteLine("Parsing error"); 
+        }
+
+        
+
+        
         
     }
 }

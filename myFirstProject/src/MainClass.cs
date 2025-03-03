@@ -39,6 +39,19 @@ namespace myFirstProject.src
             // using expression bodied method
             int result2 = Syntax.expressionMethodSumWithOptional(20, 20, 20);
             Console.WriteLine($"result of sum with expression bodied method : {result2}");
+            // ignoring backslash in file name and escaping character
+            Syntax.ignoringBackslash();
+            // comapring string
+            Syntax.comparingString();
+            // parsing string to bool
+            string isFalse = "trueii";
+            bool.TryParse(isFalse, out bool parsedString);
+            Console.WriteLine("the result of parsed string in bool is : " + parsedString);
+
+
+            Employee employee = new Employee("Hamouda", "SABOU", 31, "45k");
+            string employeeInfo = employee.ToString();
+            Console.WriteLine($"The employee informations are : {employee}");
 
             
         }

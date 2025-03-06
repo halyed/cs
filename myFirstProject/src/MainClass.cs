@@ -51,7 +51,7 @@ namespace myFirstProject.src
 
             Employee employee = new Employee("Hamouda", "SABOU", 31, "45k");
             string employeeInfo = employee.ToString();
-            Console.WriteLine($"The employee informations are : {employee}");
+            Console.WriteLine($"The employee informations are : {employee.SecondName}");
 
             
         }

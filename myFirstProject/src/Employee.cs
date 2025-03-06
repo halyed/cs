@@ -7,10 +7,10 @@ namespace myFirstProject.src
 {
     public class Employee
     {
-        string firsrName;
-        string secondName;
-        int age;
-        string wage;
+        private string firsrName;
+        private string secondName;
+        private int age;
+        private string wage;
 
 
         public Employee(string name1, string name2, int number, string toInsert){
@@ -20,6 +20,9 @@ namespace myFirstProject.src
             this.wage = toInsert;
         }
 
-
+        public string FirsrName { get => firsrName; set => firsrName = value; }
+        public string SecondName { get => secondName; set => secondName = value; }
+        public int Age { get => age; set => age = value; }
+        public string Wage { get => wage; set => wage = value; }
     }
 }

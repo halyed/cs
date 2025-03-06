@@ -138,7 +138,7 @@ namespace myFirstProject.src
         public static void comparingString(){
             string name1 = "Hamouda";
             string name2 = "Hamouda";
-            Console.WriteLine("Are name1 and name2 equal ?" + (name1==name2));
+            Console.WriteLine("Are name1 and name2 equal ? : " + (name1==name2));
         }
 
         public static void usingTryParse(string toParse){

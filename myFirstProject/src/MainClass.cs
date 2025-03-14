@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace myFirstProject.src
 {
@@ -51,7 +52,18 @@ namespace myFirstProject.src
 
             Employee employee = new Employee("Hamouda", "SABOU", 31, "45k");
             string employeeInfo = employee.ToString();
+            string jsonEmployee = JsonConvert.SerializeObject(employee);
+            employee.SecondName = "baba";
             Console.WriteLine($"The employee informations are : {employee.SecondName}");
+            Console.WriteLine($"Employee serialized as Json : {jsonEmployee}");
+            
+            // updateByRef
+            int number = 50;
+            Syntax.updateByRef(ref number);
+            Console.WriteLine($"the number updated is : {number}");
+            
+
+            // out values don't need to be initiated
 
             
         }

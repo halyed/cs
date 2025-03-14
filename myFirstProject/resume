@@ -71,3 +71,14 @@ PS C:\Users\hly\Desktop\Git\cs\MySecondProject>
 To do on c#:
 follow 10 hours of course
 make projects
+
+
+
+concepts to go deeper:
+--> reference and value passed by
+--> using out
+--> types: class,interface, delegate, enumeration and struct
+--> struct and enum
+--> delegates
+--> using object browser
+-->we have global using file that permits not to add using when we create a function in cs

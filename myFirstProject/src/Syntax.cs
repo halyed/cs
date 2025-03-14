@@ -148,7 +148,18 @@ namespace myFirstProject.src
             else Console.WriteLine("Parsing error"); 
         }
 
+        public static void updateByRef(ref int value){
+           value += 10; 
+        }
+
         
+        public enum employeeType  {
+            Sales,
+            Developper,
+            Manager,
+            FunctionalArchitect,
+            TechnicalArchitect
+        }
 
         
         
